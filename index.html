@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form-inspecao">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="setor">Setor</label>
+        <select id="setor">
+            <option value=" ">Selecione</option>
+            <option value="operacao">Operação</option>
+            <option value="manutencao">Manutenção</option>
+            <option value="seguranca">Segurança</option>
+        </select>
+
+        <p>Prioridade</p>
+        <label><input type="radio" name="prioridade" value="baixa">Baixa</label>
+        <label><input type="radio" name="prioridade" value="media">Média</label>
+        <label><input type="radio" name="prioridade" value="alta">Alta</label>
+
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao"></textarea>
+        <label>
+            <input type="checkbox" id="termos">Confirma as informações serem inviadas?
+        </label>
+
+        <button type="submit">Enviar</button>
+
+        <p id="mensagem"></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
